@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Oleandr Data",
+  "description": "This extension filters articles based on reliability.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "oleandr.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      //"css": ["mystyles.css"],
+      "js": ["jquery-1.9.1.min.js", "oleandr.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "permissions": [
+    "http://api3.skypicker.com/"
+  ]
+}
