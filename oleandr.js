@@ -5,7 +5,7 @@ $(document).ready(function() {
   console.log('trying to send xhr request...');
 
   $.ajax({
-    url: 'http://api3.skypicker.com/places?term=Lo',
+    url: 'http://skypicker.apiary.io/places',
   }).done(function ( data ) {
     if( console && console.log ) {
       console.log("xhr response:", data);
