@@ -1,0 +1,5 @@
+Load the extension
+
+http://developer.chrome.com/extensions/getstarted.html#unpacked
+
+If extension is enabled, it uses ajax call to requests data and write it to console.
